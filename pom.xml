@@ -14,7 +14,7 @@
 	<name>raio-x-p9</name>
 	<description>raio-x-p9</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
