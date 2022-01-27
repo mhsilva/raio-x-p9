@@ -216,6 +216,16 @@ body {
         width: 100%;
     }
 
+    .dropzone {
+        height: unset;
+        min-height: 400px;
+    }
+
+    .dropzone-total {
+        height: unset;
+        min-height: 100px;
+    }
+
     .dropzone > .card {
         width: 100%;
     }
