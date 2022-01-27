@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #055aca;
+    color: white;
+}
+
+.boards {
+    display: flex;
+    margin-top: 32px;
+}
+
+.board {
+    background: #fff;
+    border-radius: 8px;
+    margin: 0 16px;
+}
+
+.text {
+    width: 50%;
+}
+
+.teste {
+    width: 30%;
+    margin: 0 16px;
+}
+
+.list {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.dropzone-total {
+    padding: 16px;
+}
+
+.title {
+    align-items: center;
+    background: #000;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+.title h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.dropzone,
+.dropzone-total {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    height: 700px;
+}
+
+.dropzone {
+    width: 80%;
+}
+
+.dropzone-total {
+    width: 230px;
+}
+
+.dropzone>.card {
+    width: 200px;
+}
+
+.dropzone-total>.card {
+    width: 100%;
+}
+
+.card {
+    background-color: #2687f7;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    width: 180px;
+}
+
+.highlight {
+    background-color: #FD951F08;
+}
+
+.card,
+.dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: grabbing;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: #4cd13711;
+}
+
+#option-1,
+#option-5,
+#option-7,
+#option-11 {
+    background: #fff;
+    border: 1px solid #000;
+}
+
+#option-6 {
+    background: rgb(214, 9, 187);
+}
+
+#option-2,
+#option-12 {
+    background: rgb(46, 87, 5);
+}
+
+.dropzone>#option-1 {
+    margin-left: 3%;
+}
+
+.dropzone>#option-2 {
+    margin-left: 50%;
+}
+
+.dropzone>#option-3 {
+    margin-left: 25%;
+}
+
+.dropzone>#option-4 {
+    margin-left: 49%;
+}
+
+.dropzone>#option-5 {
+    margin-left: 42%;
+}
+
+.dropzone>#option-6 {
+    margin-left: 15%;
+}
+
+.dropzone>#option-7 {
+    margin-left: 1%;
+}
+
+.dropzone>#option-8 {
+    margin-left: 35%;
+}
+
+.dropzone>#option-9 {
+    margin-left: auto;
+}
+
+.dropzone>#option-10 {
+    margin-left: 23%;
+}
+
+.dropzone>#option-11 {
+    margin-left: 10%;
+}
+
+.dropzone>#option-12 {
+    margin-left: 50%;
+}
+
+.dropzone>#option-13 {
+    margin-left: 13%;
+}
+
+@media only screen and (max-width: 600px) {
+    .boards {
+        display: grid; 
+        /* grid-auto-columns: 1fr;  */
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0fr 1fr; 
+        gap: 16px; 
+        grid-template-areas: 
+            "text text"
+            "coluna tickets"; 
+    }
+
+    .text {
+        grid-area: text;
+        width: 100%;
+    }
+
+    .board {
+        grid-area: coluna;
+        margin: 0;
+        width: 100%;
+    }
+
+    .dropzone {
+        width: 100%;
+    }
+
+    .dropzone-total {
+        width: 100%;
+    }
+
+    .teste {
+        grid-area: tickets;
+        margin: 0;
+        width: 100%;
+    }
+
+    .dropzone > .card {
+        width: 100%;
+    }
+
+    .dropzone > * {
+        margin: 0 !important;
+    }
+}
